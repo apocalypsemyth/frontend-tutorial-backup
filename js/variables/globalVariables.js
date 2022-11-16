@@ -1,0 +1,7 @@
+const JAVA_SERVICE_DOMAIN = 'http://localhost:8889'
+const METHOD_GET = 'GET'
+const METHOD_POST = 'POST'
+const APPLICATION_JSON = 'application/json'
+const DATA_TYPE_JSON = 'json'
+const errorMessageOfAjax = '通訊失敗，請聯絡管理員。'
+const emptyMessageOfList = '<p>尚未有資料。</p>'

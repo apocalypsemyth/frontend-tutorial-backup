@@ -1,0 +1,75 @@
+:root {
+  --white-bg-color: #fff;
+  --grey-bg-color: #9e9e9e;
+  --primary-main-bg-color: #1976d2;
+  --primary-light-bg-color: #42a5f5;
+  --primary-dark-bg-color: #1565c0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header {
+  background-color: var(--primary-dark-bg-color);
+  align-self: stretch;
+  height: calc(var(--header-height, 1vh) * 10);
+  position: sticky;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.logo {
+  display: block;
+  height: 100%;
+  border-radius: 0.25rem;
+  margin-right: auto;
+}
+
+.search-bar {
+  margin-right: auto;
+}
+
+.search-bar input[type='text'] {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-right: auto;
+  }
+
+  /* .search-bar input[type='text'] {
+    font-size: 1rem;
+  } */
+
+  .login-btn {
+    display: none;
+  }
+}
+
+.main {
+  background-color: var(--white-bg-color);
+  width: 100%;
+}
+
+.footer {
+  background-color: var(--grey-bg-color);
+  width: 100%;
+  height: calc(var(--header-height, 1vh) * 15);
+}
